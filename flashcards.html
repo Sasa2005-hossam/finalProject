@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>FlashCards · AI Study Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="description" content="Manage and organize your learning documents with AI-powered assistance." />
+  <meta name="theme-color" content="#20B486" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <link rel="icon" href=" assets/images/Sidebar/Navigation/Icon/5.svg" type="image/svg+xml" />
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="assets/css/media-queries.css" />
+  <link rel="stylesheet" href="assets/css/flashcard.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row min-vh-100">
+      <!-- Sidebar -->
+      <aside class="col-lg-3 sidebar" aria-label="Main Navigation">
+        <div class="sidebar-inner">
+          <!-- Logo -->
+          <div class="logo">
+            <img src="assets/images/Sidebar/logo/Vector.svg" alt="AI Study Assistant" />
+            <span>AI Study Assistant</span>
+          </div>
+          <!-- Navigation -->
+          <ul class="sidebar-nav">
+            <li>
+              <a href="dashboard.html" class="nav-item">
+                <img src="assets/images/Sidebar/Navigation/Icon/1.svg" alt="" />
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="assignments.html" class="nav-item">
+                <img src="assets/images/Sidebar/Navigation/Icon/2.svg" alt="" />
+                <span>Assignments</span>
+              </a>
+            </li>
+            <li>
+              <a href="schedule.html" class="nav-item">
+                <img src="assets/images/Sidebar/Navigation/Icon/3.svg" alt="" />
+                <span>Schedule</span>
+              </a>
+            </li>
+            <li>
+              <a href="documents.html" class="nav-item">
+                <img src="assets/images/Sidebar/Navigation/Icon/4.svg" alt="" />
+                <span>Documents</span>
+              </a>
+            </li>
+            <li>
+              <a href="flashcards.html" class="nav-item active">
+                <img src="assets/images/Sidebar/Navigation/Icon/5.svg" alt="" />
+                <span>FlashCards</span>
+              </a>
+            </li>
+            <li>
+              <a href="quizzes.html" class="nav-item">
+                <img src="assets/images/Sidebar/Navigation/Icon/6.svg" alt="" />
+                <span>Quizzes</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <main class="col-lg-9 col-md-12 main-content" role="main">
+
+        <!-- Top Bar -->
+        <div class="links mb-2">
+          <a href="index.html">Home</a>
+          <span class="separator">/</span>
+          <a href="dashboard.html">Dashboard</a>
+          <span class="separator">/</span>
+          <a href="assignments.html">Assignments</a>
+          <span class="separator">/</span>
+          <a href="schedule.html">Schedule</a>
+          <span class="separator">/</span>
+          <a href="documents.html">Documents</a>
+          <span class="separator">/</span>
+          <a href="flashcards.html" class="active">FlashCards</a>
+          <span class="separator">/</span>
+          <a href="quizzes.html">Quizzes</a>
+        </div>
+
+        <!-- Top Bar -->
+        <header class="top-bar d-flex justify-content-between align-items-center flex-wrap gap-3">
+
+          <div>
+            <h2 class="page-title">My FlashCards</h2>
+            <p class="page-subtitle">Review, Practice & Strengthen Your Knowledge</p>
+          </div>
+
+          <div class="inf d-flex align-items-center gap-2">
+            <a href="#"><i class="bell fa-regular fa-bell"></i></a>
+            <img src="assets/images/avatar.png" alt="User" class="imge" />
+            <h5 class="mb-0">NOURA</h5>
+          </div>
+
+        </header>
+
+        <!-- ================= FlashCards Content ================= -->
+        <section class="page-content">
+
+          <div class="flashcards-wrapper">
+
+            <!-- Create Flashcard Button -->
+            <div class="d-flex justify-content-end mb-3">
+              <button class="btn-primary-custom" data-bs-toggle="modal" data-bs-target="#createFlashModal">
+                + Create FlashCards
+              </button>
+            </div>
+
+            <div class="row g-4">
+
+
+              <!-- Card 1 -->
+              <div class="col-xl-4 col-md-6">
+                <div class="flash-card">
+
+                  <div class="flash-icon">
+                    <img src="assets/images/flash/Cards/cards-blank_16769316 1.svg" alt="Flashcard Icon">
+                  </div>
+                  <h6 class="flash-title">
+                    React JS Concept Guide
+                  </h6>
+
+                  <p class="flash-meta">CREATED 6 MIN AGO</p>
+
+                  <div class="flash-stats">
+                    <span class="flash-count">10 Cards</span>
+                    <span class="flash-progress">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                      50%
+                    </span>
+                  </div>
+
+                  <button class="btn-primary-custom w-100">
+                    Study Now
+                  </button>
+
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col-xl-4 col-md-6">
+                <div class="flash-card">
+
+                  <div class="flash-icon">
+                    <img src="assets/images/flash/Cards/cards-blank_16769316 1.svg" alt="Flashcard Icon">
+                  </div>
+
+                  <h6 class="flash-title">
+                    Advanced CSS Guide
+                  </h6>
+
+                  <p class="flash-meta">CREATED 1 DAY AGO</p>
+
+                  <div class="flash-stats">
+                    <span class="flash-count">20 Cards</span>
+                    <span class="flash-progress">
+                      <i class="fa-solid fa-arrow-trend-up"></i>
+                      80%
+                    </span>
+                  </div>
+
+                  <button class="btn-primary-custom w-100">
+                    Study Now
+                  </button>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      </main>
+
+    </div>
+  </div>
+  <div class="modal fade" id="createFlashModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4 rounded-4">
+
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Create New FlashCard Set</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          </button>
+        </div>
+
+        <div class="modal-body">
+
+          <label for="flashTitle" class="form-label">Flashcard Title</label>
+          <input type="text" id="flashTitle" class="form-control mb-3" placeholder="Enter title" required>
+
+          <label for="cardsNumber" class="form-label">Number of Cards</label>
+          <input type="number" id="cardsNumber" class="form-control" value="10" min="1" required>
+
+        </div>
+
+        <div class="modal-footer border-0">
+          <button class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+          <button class="btn-primary-custom">Create</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/all.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

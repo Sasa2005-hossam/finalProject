@@ -141,24 +141,125 @@ body {
   margin-right: 8px;
   color: black;
 }
-
 .imge {
   width: 30px;
   border-radius: 50%;
   position: relative;
   top: -5px;
 }
-
-h5 {
+.top-bar h5 {
   font-size: 15px;
   font-weight: 600;
   margin-left: 5px;
 }
-
 .main-content {
   padding: 30px;
 }
-
 .container {
   margin-top: 30px;
+}
+/* ================= Quiz Card Specific ================= */
+
+.quiz-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.quiz-title {
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.quiz-title:hover {
+  color: var(--primary);
+}
+
+.quiz-date {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 6px;
+  letter-spacing: 0.5px;
+}
+
+.quiz-questions {
+  margin-top: 14px;
+  background: #f3f4f6;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.delete-btn {
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  color: #ef4444;
+  transform: scale(1.1);
+}
+
+.card-custom {
+  background: var(--bg-white);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-custom:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.btn-primary-custom {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary-custom:hover {
+  background: #1fa27b;
+  transform: translateY(-1px);
+}
+
+.badge-custom {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+
+/* ================= White Wrapper Behind Cards ================= */
+
+.quiz-wrapper {
+  background: var(--bg-white);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+  min-height: 500px;
+  margin-top: 30px;
+}
+.separator {
+  margin: 0 6px;
+  color: var(--text-light);
 }
