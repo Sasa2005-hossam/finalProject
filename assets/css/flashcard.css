@@ -1,0 +1,164 @@
+:root {
+  --primary: #20B486;
+  --primary-soft: #eaf7f3;
+  --text-dark: #111827;
+  --text-muted: #8a8a8a;
+  --text-light: rgba(17, 24, 39, 0.65);
+  --bg-white: #ffffff;
+  --bg-page: #f7f9fb;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-page);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+/* ================= Logo ================= */
+.main-content .links a {
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.main-content .links a:hover {
+  color: var(--primary);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  margin-left: -10px;
+  padding: 0;
+  background: transparent;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--text-dark);
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.logo span {
+  white-space: nowrap;
+}
+
+/* ================= Sidebar Inner ================= */
+.sidebar-inner {
+  padding: 28px 18px;
+}
+
+/* ================= Navigation ================= */
+.sidebar {
+  background: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  min-height: 100vh;
+}
+
+.sidebar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+/* Reset links */
+.sidebar-nav a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* ================= Nav Item ================= */
+.sidebar-nav .nav-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  margin-bottom: 6px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: transparent;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Hover */
+.sidebar-nav .nav-item:hover {
+  background: #f9fafb;
+  color: var(--primary);
+}
+
+/* ================= Active ================= */
+.sidebar-nav .nav-item.active {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+/* ================= Icons ================= */
+.sidebar-nav .nav-item img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+  transition: opacity 0.2s ease, filter 0.2s ease;
+}
+
+.sidebar-nav .nav-item:hover img {
+  opacity: 1;
+}
+
+.sidebar-nav .nav-item.active img {
+  filter: brightness(0) invert(1);
+  opacity: 1;
+}
+
+/* ================= Subtitle ================= */
+.page-subtitle {
+  margin-top: 6px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: var(--text-light);
+  letter-spacing: 0.3px;
+  position: relative;
+}
+
+.bell {
+  font-size: 24px;
+  margin-right: 8px;
+  color: black;
+}
+
+.imge {
+  width: 30px;
+  border-radius: 50%;
+  position: relative;
+  top: -5px;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.main-content {
+  padding: 30px;
+}
+
+.container {
+  margin-top: 30px;
+}
