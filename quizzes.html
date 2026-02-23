@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quizzes · AI Study Assistant</title>
+  <meta name="description" content="Manage and organize your learning documents with AI-powered assistance." />
+  <meta name="theme-color" content="#20B486" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+  <link rel="icon" href=" assets/images/Sidebar/Navigation/Icon/6.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="assets/css/media-queries.css" />
+  <link rel="stylesheet" href="assets/css/quizes.css" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row min-vh-100">
+      <!-- Sidebar -->
+      <aside class="col-lg-3 sidebar" aria-label="Main Navigation">
+        <div class="sidebar-inner">
+          <!-- Logo -->
+          <div class="logo">
+            <img src="assets/images/Sidebar/logo/Vector.svg" alt="AI Study Assistant" />
+            <span>AI Study Assistant</span>
+          </div>
+          <!-- Navigation -->
+          <ul class="sidebar-nav">
+            <li>
+              <a href="dashboard.html" class="nav-item">
+                <img src="assets/images/Sidebar/Navigation/Icon/1.svg" alt="" />
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="assignments.html" class="nav-item">
+                <img src="assets/images/Sidebar/Navigation/Icon/2.svg" alt="" />
+                <span>Assignments</span>
+              </a>
+            </li>
+            <li>
+              <a href="schedule.html" class="nav-item">
+                <img src="assets/images/Sidebar/Navigation/Icon/3.svg" alt="" />
+                <span>Schedule</span>
+              </a>
+            </li>
+            <li>
+              <a href="documents.html" class="nav-item">
+                <img src="assets/images/Sidebar/Navigation/Icon/4.svg" alt="" />
+                <span>Documents</span>
+              </a>
+            </li>
+            <li>
+              <a href="flashcards.html" class="nav-item">
+                <img src="assets/images/Sidebar/Navigation/Icon/5.svg" alt="" />
+                <span>FlashCards</span>
+              </a>
+            </li>
+            <li>
+              <a href="quizzes.html" class="nav-item active">
+                <img src="assets/images/Sidebar/Navigation/Icon/6.svg" alt="" />
+                <span>Quizzes</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <main class="col-lg-9 col-12 main-content" role="main">
+
+        <!-- Top Bar -->
+        <div class="links mb-2">
+          <a href="index.html">Home</a>
+          <span class="separator">/</span>
+          <a href="dashboard.html">Dashboard</a>
+          <span class="separator">/</span>
+          <a href="assignments.html">Assignments</a>
+          <span class="separator">/</span>
+          <a href="schedule.html">Schedule</a>
+          <span class="separator">/</span>
+          <a href="documents.html">Documents</a>
+          <span class="separator">/</span>
+          <a href="flashcards.html" >FlashCards</a>
+          <span class="separator">/</span>
+          <a href="quizzes.html" class="active">Quizzes</a>
+        </div>
+
+        <!-- Top Bar -->
+        <header class="top-bar d-flex justify-content-between align-items-center flex-wrap gap-3">
+          <div>
+            <h2 class="page-title">My Quizzes</h2>
+            <p class="page-subtitle">Test Your Knowledge & Track Your Progress</p>
+          </div>
+
+          <div class="inf d-flex align-items-center gap-2">
+            <a href="#"><i class="bell fa-regular fa-bell"></i></a>
+            <img src="assets/images/avatar.png" alt="User" class="imge" />
+            <h5 class="mb-0">NOURA</h5>
+          </div>
+        </header>
+
+        <!-- Page Content -->
+        <section class="page-content">
+          <div class="quiz-wrapper">
+            <!-- Generate Button -->
+            <div class="d-flex justify-content-end mb-4">
+              <button class="btn-primary-custom" data-bs-toggle="modal" data-bs-target="#generateQuizModal">
+                + Generate Quiz
+              </button>
+            </div>
+
+            <!-- Quiz Cards -->
+            <div class="container-fluid p-0">
+              <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-xl-4 col-md-6">
+                  <div class="card-custom quiz-card">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="badge-custom">Score: 0</span>
+
+                      <button class="delete-btn">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </div>
+
+                    <h6 class="quiz-title mt-3">
+                      React JS Concept Guide - Quiz
+                    </h6>
+
+                    <p class="quiz-date">
+                      CREATED NOV 23, 2025
+                    </p>
+
+                    <div class="quiz-questions">
+                      5 Questions
+                    </div>
+
+                    <button class="btn-primary-custom w-100 mt-3">
+                      View Results
+                    </button>
+
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-xl-4 col-md-6">
+                  <div class="card-custom quiz-card">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="badge-custom">Score: 85%</span>
+
+                      <button class="delete-btn">
+                        <i class="fa-solid fa-trash"></i>
+                      </button>
+                    </div>
+
+                    <h6 class="quiz-title mt-3">
+                      Advanced CSS Concepts
+                    </h6>
+
+                    <p class="quiz-date">
+                      CREATED DEC 01, 2025
+                    </p>
+
+                    <div class="quiz-questions">
+                      10 Questions
+                    </div>
+
+                    <button class="btn-primary-custom w-100 mt-3">
+                      View Results
+                    </button>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+  <div class="modal fade" id="generateQuizModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4 rounded-4">
+
+        <div class="modal-header border-0">
+          <h5 class="modal-title">Generate New Quiz</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <label class="form-label">Number of Questions</label>
+          <input type="number" class="form-control" value="5" min="1"  >
+        </div>
+
+        <div class="modal-footer border-0">
+          <button class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+          <button class="btn-primary-custom">Generate</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/all.min.js"></script>
+</body>
+
+</html>
