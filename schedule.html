@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Schedule · AI Study Assistant</title>
+
+    <meta name="description" content="Manage and organize your learning documents with AI-powered assistance." />
+    <meta name="theme-color" content="#20B486" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <link rel="icon" href="assets/images/Sidebar/Navigation/Icon/6.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/media-queries.css" />
+    <link rel="stylesheet" href="assets/css/schedule.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row min-vh-100">
+            <!-- Sidebar -->
+            <aside class="col-lg-3 sidebar" aria-label="Main Navigation">
+                <div class="sidebar-inner">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <img src="assets/images/Sidebar/logo/Vector.svg" alt="AI Study Assistant" />
+                        <span>AI Study Assistant</span>
+                    </div>
+                    <!-- Navigation -->
+                    <ul class="sidebar-nav">
+                        <li>
+                            <a href="dashboard.html" class="nav-item">
+                                <img src="assets/images/Sidebar/Navigation/Icon/1.svg" alt="" />
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assignments.html" class="nav-item">
+                                <img src="assets/images/Sidebar/Navigation/Icon/2.svg" alt="" />
+                                <span>Assignments</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="schedule.html" class="nav-item active">
+                                <img src="assets/images/Sidebar/Navigation/Icon/3.svg" alt="" />
+                                <span>Schedule</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="documents.html" class="nav-item">
+                                <img src="assets/images/Sidebar/Navigation/Icon/4.svg" alt="" />
+                                <span>Documents</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="flashcards.html" class="nav-item">
+                                <img src="assets/images/Sidebar/Navigation/Icon/5.svg" alt="" />
+                                <span>FlashCards</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="quizzes.html" class="nav-item">
+                                <img src="assets/images/Sidebar/Navigation/Icon/6.svg" alt="" />
+                                <span>Quizzes</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Main -->
+            <main class="col-lg-9 col-md-12 main-content" role="main">
+                <!-- Top Bar -->
+                <div class="links mb-2">
+                    <a href="index.html">Home</a>
+                    <span class="separator">/</span>
+                    <a href="dashboard.html" class="active">Dashboard</a>
+                    <span class="separator">/</span>
+                    <a href="assignments.html" class="active">Assignments</a>
+                    <span class="separator">/</span>
+                    <a href="schedule.html" class="active">Schedule</a>
+                    <span class="separator">/</span>
+                    <a href="documents.html" class="active">Documents</a>
+                    <span class="separator">/</span>
+                    <a href="flashcards.html" class="active">FlashCards</a>
+                    <span class="separator">/</span>
+                    <a href="quizzes.html" class="active">Quizzes</a>
+                </div>
+                <header class="top-bar d-flex justify-content-between align-items-center flex-wrap gap-3">
+
+                    <div>
+                        <h2 class="page-title">Hello Noura</h2>
+                        <p class="page-subtitle">Let's Learn Something New Today!</p>
+                    </div>
+                    <div class="inf d-flex justify-content-between align-items-center">
+                        <a href="#"> <i class="bell fa-regular fa-bell"></i></a>
+                        <img src="assets/images/avatar.png " alt="" class="imge" />
+                        <h5>NOURA</h5>
+                    </div>
+                </header>
+                <!-- ================= schedule ================= -->
+                <div class="container-fluid mt-4">
+                    <div class="row">
+                        <div class="col-12">
+
+                            <!-- Calendar Header -->
+                            <div class="calendar-top d-flex justify-content-between align-items-center flex-wrap mb-4">
+                                <div>
+                                    <h3 class="calendar-title">Calendar</h3>
+                                    <div class="calendar-tabs">
+                                        <span class="active">Monthly</span>
+                                        <span>Weekly</span>
+                                        <span>Daily</span>
+                                    </div>
+                                </div>
+
+                                <button class="add-event-btn">+ Add Event</button>
+                            </div>
+
+                            <!-- Navigation -->
+                            <div class="calendar-navigation d-flex justify-content-between align-items-center mb-3">
+                                <div class="month-label">September 2023</div>
+
+                                <div class="calendar-controls d-flex gap-2">
+                                    <button class="nav-btn">‹</button>
+                                    <button class="today-btn">Today</button>
+                                    <button class="nav-btn">›</button>
+                                </div>
+                            </div>
+
+                            <!-- Calendar Container -->
+                            <div class="calendar-body">
+
+                                <!-- Week 1 -->
+                                <div class="row g-0 week-row">
+                                    <div class="col calendar-day fade-day">28</div>
+                                    <div class="col calendar-day fade-day">29</div>
+                                    <div class="col calendar-day fade-day">30</div>
+
+                                    <div class="col calendar-day">
+                                        <span class="date">1</span>
+                                        <div class="event red">Design Review</div>
+                                    </div>
+
+                                    <div class="col calendar-day">
+                                        <span class="date">2</span>
+                                    </div>
+
+                                    <div class="col calendar-day">
+                                        <span class="date">3</span>
+                                        <div class="event yellow">Meeting 11:30 - 13:00</div>
+                                    </div>
+
+                                    <div class="col calendar-day">
+                                        <span class="date">4</span>
+                                    </div>
+                                </div>
+
+                                <!-- Week 2 -->
+                                <div class="row g-0 week-row">
+                                    <div class="col calendar-day"><span class="date">5</span></div>
+                                    <div class="col calendar-day"><span class="date">6</span></div>
+                                    <div class="col calendar-day">
+                                        <span class="date">7</span>
+                                        <div class="event red">Design Review</div>
+                                        <div class="event purple">Discussion</div>
+                                    </div>
+                                    <div class="col calendar-day"><span class="date">8</span></div>
+                                    <div class="col calendar-day"><span class="date">9</span></div>
+                                    <div class="col calendar-day">
+                                        <span class="date">10</span>
+                                        <div class="event green">Market Research</div>
+                                        <div class="event purple">Discussion</div>
+                                    </div>
+                                    <div class="col calendar-day"><span class="date">11</span></div>
+                                </div>
+
+                                <!-- Week 3 -->
+                                <div class="row g-0 week-row">
+                                    <div class="col calendar-day"><span class="date">12</span></div>
+                                    <div class="col calendar-day"><span class="date">13</span></div>
+                                    <div class="col calendar-day"><span class="date">14</span></div>
+                                    <div class="col calendar-day"><span class="date">15</span></div>
+                                    <div class="col calendar-day"><span class="date">16</span></div>
+                                    <div class="col calendar-day"><span class="date">17</span></div>
+                                    <div class="col calendar-day"><span class="date">18</span></div>
+                                </div>
+
+                                <!-- Week 4 -->
+                                <div class="row g-0 week-row">
+                                    <div class="col calendar-day">
+                                        <span class="date">19</span>
+                                        <div class="event red">Design Review</div>
+                                        <div class="event orange">New Deals</div>
+                                    </div>
+                                    <div class="col calendar-day"><span class="date">20</span></div>
+                                    <div class="col calendar-day"><span class="date">21</span></div>
+                                    <div class="col calendar-day">
+                                        <span class="date">22</span>
+                                        <div class="event yellow">Meeting</div>
+                                        <div class="event red">Design Review</div>
+                                    </div>
+                                    <div class="col calendar-day"><span class="date">23</span></div>
+                                    <div class="col calendar-day"><span class="date">24</span></div>
+                                    <div class="col calendar-day"><span class="date">25</span></div>
+                                </div>
+
+                                <!-- Week 5 -->
+                                <div class="row g-0 week-row">
+                                    <div class="col calendar-day"><span class="date">26</span></div>
+                                    <div class="col calendar-day"><span class="date">27</span></div>
+                                    <div class="col calendar-day">
+                                        <span class="date">28</span>
+                                        <div class="event yellow">Meeting</div>
+                                        <div class="event red">Design Review</div>
+                                        <div class="event orange">New Deals</div>
+                                        <div class="event purple">Discussion</div>
+                                    </div>
+                                    <div class="col calendar-day"><span class="date">29</span></div>
+                                    <div class="col calendar-day">
+                                        <span class="date">30</span>
+                                        <div class="event yellow">Meeting</div>
+                                        <div class="event red">Design Review</div>
+                                        <div class="event orange">New Deals</div>
+                                        <div class="event purple">Discussion</div>
+                                    </div>
+                                    <div class="col calendar-day"><span class="date">31</span></div>
+                                    <div class="col calendar-day fade-day">1</div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+            <script src="assets/js/all.min.js"></script>
+            <script src="assets/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

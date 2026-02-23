@@ -158,3 +158,179 @@ h5 {
 .container {
     margin-top: 30px;
 }
+
+/* Main spacing inside content */
+.main-content {
+    padding: 30px 40px;
+    background-color: #f5f7fa;
+}
+
+/* ================= Page Header ================= */
+
+.top-bar h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.page-subtitle {
+    font-size: 14px;
+    color: #8a94a6;
+    margin-bottom: 0;
+}
+
+/* ================= Card ================= */
+
+.assignments-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px;
+    border: 1px solid #eef0f4;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+/* ================= Table ================= */
+
+.assignments-card .table {
+    margin-bottom: 0;
+}
+
+.assignments-card .table thead th {
+    font-size: 14px;
+    font-weight: 500;
+    color: #8a94a6;
+    padding: 18px 12px;
+    border-bottom: 1px solid #edf0f4;
+}
+
+.assignments-card .table tbody td {
+    font-size: 15px;
+    padding: 20px 12px;
+    vertical-align: middle;
+    border-bottom: 1px solid #edf0f4;
+    background: #fff;
+}
+
+/* Table hover effect */
+.assignments-card .table tbody tr:hover {
+    background-color: #fafbfd;
+    transition: 0.2s ease;
+}
+
+/* ================= Status Badges ================= */
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    height: 32px;
+    padding: 0 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* Done */
+.status.done {
+    background: #e7f6f0;
+    color: #20b486;
+}
+
+/* Progress */
+.status.progress {
+    background: #e9f0ff;
+    color: #3b82f6;
+}
+
+/* Pending */
+.status.pending {
+    background: #fdecec;
+    color: #ef4444;
+}
+
+/* ================= Submit / Upload ================= */
+
+.upload {
+    color: #20b486;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.upload:hover {
+    text-decoration: underline;
+}
+
+.submitted {
+    color: #b1b5c3;
+    font-size: 14px;
+}
+
+/* ================= Pagination ================= */
+
+.pagination-wrapper {
+    margin-top: 30px;
+}
+
+.pagination .page-link {
+    border: none;
+    background: #f1f3f7;
+    color: #6b7280;
+    border-radius: 8px;
+    padding: 6px 14px;
+    margin-left: 6px;
+}
+
+.pagination .page-item.active .page-link {
+    background: #20b486;
+    color: #ffffff;
+}
+
+/* ================= Select ================= */
+
+.form-select {
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    padding: 6px 30px 6px 10px;
+    font-size: 14px;
+}
+
+/* ================= Responsive ================= */
+
+@media (max-width: 992px) {
+    .main-content {
+        padding: 20px;
+    }
+
+    .assignments-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .assignments-card .table thead {
+        display: none;
+    }
+
+    .assignments-card .table tbody tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #edf0f4;
+        border-radius: 10px;
+        padding: 12px;
+    }
+
+    .assignments-card .table tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border: none;
+    }
+
+    .assignments-card .table tbody td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #6b7280;
+    }
+}
