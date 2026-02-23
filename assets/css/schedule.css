@@ -162,3 +162,267 @@ h5 {
 .container {
     margin-top: 30px;
 }
+
+
+
+
+
+/* ======================================================
+   MAIN LAYOUT
+====================================================== */
+
+.main-content {
+    background: #f5f6f8;
+    padding: 30px 40px;
+}
+
+/* ======================================================
+   CALENDAR HEADER
+====================================================== */
+
+.calendar-top {
+    border-bottom: 1px solid #e6e9ee;
+    padding-bottom: 15px;
+}
+
+.calendar-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #27c498;
+}
+
+.calendar-tabs {
+    margin-top: 8px;
+}
+
+.calendar-tabs span {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #8a8f98;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.calendar-tabs span:hover {
+    color: #27c498;
+}
+
+.calendar-tabs .active {
+    color: #27c498;
+    border-bottom: 2px solid #27c498;
+    padding-bottom: 4px;
+}
+
+.add-event-btn {
+    background: #27c498;
+    border: none;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.add-event-btn:hover {
+    background: #21b387;
+}
+
+/* ======================================================
+   MONTH NAVIGATION
+====================================================== */
+
+.calendar-navigation {
+    margin-top: 20px;
+}
+
+.month-label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #27c498;
+}
+
+.nav-btn {
+    background: #f1f3f6;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.today-btn {
+    background: #27c498;
+    border: none;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* ======================================================
+   CALENDAR CONTAINER
+====================================================== */
+
+.calendar-container {
+    background: #ffffff;
+    border-radius: 12px;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #e3e6ea;
+}
+
+/* ======================================================
+   DAYS HEADER (Sun Mon Tue...)
+====================================================== */
+
+.calendar-days {
+    background: #f3f4f6;
+    border-radius: 8px 8px 0 0;
+    font-size: 13px;
+    font-weight: 500;
+    color: #7a808a;
+    border: 1px solid #e3e6ea;
+    border-bottom: none;
+}
+
+.calendar-days .col {
+    padding: 12px 0;
+    text-align: center;
+}
+
+/* ======================================================
+   CALENDAR BODY
+====================================================== */
+
+.calendar-body {
+    border: 1px solid #e3e6ea;
+    border-top: none;
+}
+
+/* Each Week Row */
+.week-row {
+    border-bottom: 1px solid #e3e6ea;
+}
+
+.week-row:last-child {
+    border-bottom: none;
+}
+
+/* ======================================================
+   DAY CELL
+====================================================== */
+
+.calendar-day {
+    min-height: 160px;
+    border-right: 1px solid #e3e6ea;
+    padding: 12px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.calendar-day:last-child {
+    border-right: none;
+}
+
+.calendar-day:hover {
+    background: #f9fafb;
+}
+
+/* Previous / Next Month Days */
+.fade-day {
+    background: #fafafa;
+    color: #c8ccd3;
+}
+
+/* ======================================================
+   DATE NUMBER
+====================================================== */
+
+.date {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+/* ======================================================
+   EVENTS
+====================================================== */
+
+.event {
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Event Colors */
+
+.red {
+    background: #ffe5e5;
+    color: #ff4d4f;
+}
+
+.yellow {
+    background: #fff6db;
+    color: #b38b00;
+}
+
+.green {
+    background: #e6fff5;
+    color: #27c498;
+}
+
+.purple {
+    background: #f1e8ff;
+    color: #8a5cff;
+}
+
+.orange {
+    background: #fff0e5;
+    color: #ff8c42;
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 1200px) {
+    .calendar-day {
+        min-height: 140px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-content {
+        padding: 20px;
+    }
+
+    .calendar-day {
+        min-height: 120px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .calendar-day {
+        min-height: 100px;
+        padding: 8px;
+        font-size: 11px;
+    }
+
+    .event {
+        font-size: 11px;
+        padding: 4px 6px;
+    }
+}
