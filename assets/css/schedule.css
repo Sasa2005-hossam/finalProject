@@ -63,6 +63,8 @@ body {
     background: #ffffff;
     border-right: 1px solid #e5e7eb;
     min-height: 100vh;
+    position: sticky;
+    top: 0;
 }
 
 .sidebar-nav {
@@ -91,10 +93,9 @@ body {
     font-weight: 500;
     color: var(--text-muted);
     background: transparent;
-    transition:
-        background 0.2s ease,
-        color 0.2s ease,
-        transform 0.2s ease;
+    transition: background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 /* Hover */
@@ -164,21 +165,12 @@ h5 {
 }
 
 
-
-
-
-/* ======================================================
-   MAIN LAYOUT
-====================================================== */
-
 .main-content {
     background: #f5f6f8;
     padding: 30px 40px;
 }
 
-/* ======================================================
-   CALENDAR HEADER
-====================================================== */
+/*  CALENDAR HEADER */
 
 .calendar-top {
     border-bottom: 1px solid #e6e9ee;
@@ -229,9 +221,7 @@ h5 {
     background: #21b387;
 }
 
-/* ======================================================
-   MONTH NAVIGATION
-====================================================== */
+/* MONTH NAVIGATION*/
 
 .calendar-navigation {
     margin-top: 20px;
@@ -316,7 +306,7 @@ h5 {
 ====================================================== */
 
 .calendar-day {
-    min-height: 160px;
+    min-height: 140px;
     border-right: 1px solid #e3e6ea;
     padding: 12px;
     background: #ffffff;
