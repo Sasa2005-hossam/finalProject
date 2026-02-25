@@ -70,10 +70,8 @@
           </ul>
         </div>
       </aside>
-
       <!-- Main -->
       <main class="col-lg-9 col-md-12 main-content" role="main">
-
         <!-- Top Bar -->
         <div class="links mb-2">
           <a href="index.html">Home</a>
@@ -90,130 +88,119 @@
           <span class="separator">/</span>
           <a href="quizzes.html">Quizzes</a>
         </div>
-
         <!-- Top Bar -->
         <header class="top-bar d-flex justify-content-between align-items-center flex-wrap gap-3">
-
           <div>
             <h2 class="page-title">My FlashCards</h2>
             <p class="page-subtitle">Review, Practice & Strengthen Your Knowledge</p>
           </div>
-
           <div class="inf d-flex align-items-center gap-2">
             <a href="#"><i class="bell fa-regular fa-bell"></i></a>
             <img src="assets/images/avatar.png" alt="User" class="imge" />
             <h5 class="mb-0">NOURA</h5>
           </div>
-
         </header>
-
         <!-- ================= FlashCards Content ================= -->
-        <section class="page-content">
-
-          <div class="flashcards-wrapper">
-
-            <!-- Create Flashcard Button -->
-            <div class="d-flex justify-content-end mb-3">
-              <button class="btn-primary-custom" data-bs-toggle="modal" data-bs-target="#createFlashModal">
-                + Create FlashCards
-              </button>
-            </div>
-
-            <div class="row g-4">
-
-
-              <!-- Card 1 -->
-              <div class="col-xl-4 col-md-6">
-                <div class="flash-card">
-
-                  <div class="flash-icon">
-                    <img src="assets/images/flash/Cards/cards-blank_16769316 1.svg" alt="Flashcard Icon">
-                  </div>
-                  <h6 class="flash-title">
-                    React JS Concept Guide
-                  </h6>
-
-                  <p class="flash-meta">CREATED 6 MIN AGO</p>
-
-                  <div class="flash-stats">
-                    <span class="flash-count">10 Cards</span>
-                    <span class="flash-progress">
-                      <i class="fa-solid fa-arrow-trend-up"></i>
-                      50%
-                    </span>
-                  </div>
-
-                  <button class="btn-primary-custom w-100">
-                    Study Now
+        <section class="flashcards-page">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="d-flex justify-content-end mb-4">
+                  <button class="btn-primary-custom" data-bs-toggle="modal" data-bs-target="#createFlashModal">
+                    + Create FlashCards
                   </button>
-
                 </div>
               </div>
-
-              <!-- Card 2 -->
-              <div class="col-xl-4 col-md-6">
-                <div class="flash-card">
-
-                  <div class="flash-icon">
-                    <img src="assets/images/flash/Cards/cards-blank_16769316 1.svg" alt="Flashcard Icon">
+              <div class="col-12">
+                <div class="row g-4">
+                  <!-- Card 1 -->
+                  <div class="col-xl-4 col-md-6 col-12">
+                    <div class="flash-card h-100">
+                      <div class="flash-icon">
+                        <img src="assets/images/flash/Cards/cards-blank_16769316 1.svg" alt="Flashcard Icon">
+                      </div>
+                      <h6 class="flash-title">
+                        React JS Concept Guide
+                      </h6>
+                      <p class="flash-meta">Created 6 min ago</p>
+                      <div class="flash-stats">
+                        <span class="flash-count">10 Cards</span>
+                        <span class="flash-progress">
+                          <i class="fa-solid fa-arrow-trend-up"></i>
+                          50%
+                        </span>
+                      </div>
+                      <button class="btn-primary-custom w-100 mt-3">
+                        Study Now
+                      </button>
+                    </div>
                   </div>
-
-                  <h6 class="flash-title">
-                    Advanced CSS Guide
-                  </h6>
-
-                  <p class="flash-meta">CREATED 1 DAY AGO</p>
-
-                  <div class="flash-stats">
-                    <span class="flash-count">20 Cards</span>
-                    <span class="flash-progress">
-                      <i class="fa-solid fa-arrow-trend-up"></i>
-                      80%
-                    </span>
+                  <!-- Card 2 -->
+                  <div class="col-xl-4 col-md-6 col-12">
+                    <div class="flash-card h-100">
+                      <div class="flash-icon">
+                        <img src="assets/images/flash/Cards/cards-blank_16769316 1.svg" alt="Flashcard Icon">
+                      </div>
+                      <h6 class="flash-title">
+                        Advanced CSS Guide
+                      </h6>
+                      <p class="flash-meta">Created 1 day ago</p>
+                      <div class="flash-stats">
+                        <span class="flash-count">20 Cards</span>
+                        <span class="flash-progress">
+                          <i class="fa-solid fa-arrow-trend-up"></i>
+                          80%
+                        </span>
+                      </div>
+                      <button class="btn-primary-custom w-100 mt-3">
+                        Study Now
+                      </button>
+                    </div>
                   </div>
-
-                  <button class="btn-primary-custom w-100">
-                    Study Now
-                  </button>
-
                 </div>
               </div>
-
             </div>
-
           </div>
-
         </section>
-
+        
       </main>
-
     </div>
   </div>
-  <div class="modal fade" id="createFlashModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content p-4 rounded-4">
 
-        <div class="modal-header border-0">
-          <h5 class="modal-title">Create New FlashCard Set</h5>
+  <div class="modal fade" id="createFlashModal" tabindex="-1" aria-labelledby="createFlashLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4">
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title" id="createFlashLabel">
+            Create New Flashcard Set
+          </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
           </button>
         </div>
-
-        <div class="modal-body">
-
-          <label for="flashTitle" class="form-label">Flashcard Title</label>
-          <input type="text" id="flashTitle" class="form-control mb-3" placeholder="Enter title" required>
-
-          <label for="cardsNumber" class="form-label">Number of Cards</label>
-          <input type="number" id="cardsNumber" class="form-control" value="10" min="1" required>
-
+        <div class="modal-body pt-3">
+          <form>
+            <div class="mb-3">
+              <label for="flashTitle" class="form-label">
+                Flashcard Title
+              </label>
+              <input type="text" id="flashTitle" class="form-control" placeholder="Enter title" required>
+            </div>
+            <div class="mb-3">
+              <label for="cardsNumber" class="form-label">
+                Number of Cards
+              </label>
+              <input type="number" id="cardsNumber" class="form-control" value="10" min="1" max="200" required>
+            </div>
+          </form>
         </div>
-
-        <div class="modal-footer border-0">
-          <button class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-          <button class="btn-primary-custom">Create</button>
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-light" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="button" class="btn-primary-custom">
+            Create
+          </button>
         </div>
-
       </div>
     </div>
   </div>
@@ -221,5 +208,4 @@
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
-
 </html>
