@@ -1,1 +1,1 @@
-# finalProject
+# 🤖 AI Study Assistant  
